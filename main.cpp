@@ -1,12 +1,18 @@
 #include <Novice.h>
 #include <math.h>
-#include "Matrix4x4.h"
 #include "cassert"
 
 const char kWindowTitle[] = "LE2B_04_ウエキレオ_MT3_00_02";
 
 static const int kRowHeight = 20;
 static const int kColumnWidth = 60;
+
+
+struct Matrix4x4 final {
+	float m[4][4];
+};
+
+
 
 void MatrixScreenPrintf(int x, int y, const Matrix4x4& matrix)
 {
